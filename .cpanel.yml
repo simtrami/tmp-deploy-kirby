@@ -1,4 +1,5 @@
 ---
 deployment:
   tasks:
-    - composer install --no-interaction --prefer-dist --optimize-autoloader
+    - export COMPOSER_BIN=/opt/cpanel/composer/bin/composer
+    - $COMPOSER_BIN install --no-interaction --prefer-dist --optimize-autoloader
