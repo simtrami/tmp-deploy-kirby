@@ -1,4 +1,4 @@
 ---
 deployment:
   tasks:
-    - touch iamhere
+    - composer install --no-interaction --prefer-dist --optimize-autoloader
